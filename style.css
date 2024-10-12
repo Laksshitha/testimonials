@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6; /* Light background color for the entire body */
+  }
+  
+  .a4-container {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional border for A4 container */
+    background-color: #ffffff; /* A4 background */
+    position: relative;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* New testimonial row for first two testimonials */
+  .testimonial-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between testimonials */
+    align-items: flex-start; /* Align items at the start */
+    gap: 20px; /* Equal spacing between boxes */
+  }
+  
+  /* Testimonial box styles */
+  .testimonial-box {
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px); /* Each box takes half width minus spacing */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    border: 2px solid black; /* Solid black border for white background boxes */
+  }
+  
+  /* Dark testimonials */
+  .testimonial-box.dark {
+    background-color: #333; /* Dark background for dark testimonials */
+    color: white; /* White text */
+  }
+  
+  /* Light testimonials */
+  .testimonial-box.light {
+    background-color: #ffffff; /* White background for light testimonials */
+    color: black; /* Black text */
+  }
+  
+  /* Alignment classes */
+  .left-align {
+    align-self: flex-start; /* Align left */
+  }
+  
+  .right-align {
+    align-self: flex-end; /* Align right */
+  }
+  
+  .center-align {
+    text-align: center; /* Center align content */
+  }
+  
+  /* Common styles for testimonial text */
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding-top: 5px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+   #check{
+    width: 700px;
+    height: 200px;
+   }
+
+  .user-details h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .user-details p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .rating {
+    font-size: 1.8rem;
+    color: gold;
+    text-align:left;
+    padding-bottom: 5px;
+  }
+  
+  .jackie-image {
+    width: 200px; /* Width of the square image */
+    height: 200px; /* Height of the square image (equal to Jackie box height) */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-right: 20px; /* Space between the image and Jackie Mackle box */
+  }
+  
+  .testimonial-slider {
+    width: 100%;
+    background-color: #ffffff; /* White background for the slider */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black; /* Border around the slider */
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .slider-controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+  .slider-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
